@@ -16,4 +16,4 @@ Jupyternotebook links:
 - Training and testing loss
 - Information
 
-<img src="images/train and test loss.JPG" width="500">
+<img src="images/train and test loss.JPG" width="700">
