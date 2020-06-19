@@ -1,8 +1,3 @@
-# Nayan Thapa 
-https://nyanonyan.github.io/Portfolio/
-
-## Projects
-
 ### 1) EDA and Forecasting on weekly petrol and diesel data in the UK
 
 <img src="images/Petrol and Diesel pump price graph.JPG" width="750">
