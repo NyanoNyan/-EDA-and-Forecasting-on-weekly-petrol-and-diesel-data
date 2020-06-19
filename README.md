@@ -40,9 +40,6 @@ A univariate approach was used for this, as when additional features such as pet
 
 <img src="images/train and test loss.JPG" width="700">
 
-Train MSE: 5.102
-
-Test MSE: 10.504
 
 - Results on training set shows that the predicted values are similar to the actual values.
 
@@ -54,6 +51,9 @@ Test MSE: 10.504
 
 <img src="images/training_data_test_results.JPG" width="700">
 
+Train MSE: 5.102
+
+Test MSE: 10.504
 
 **Predicting the future:**
 
@@ -87,6 +87,10 @@ Test MSE: 10.504
 - Information
 
 <img src="images/de-trend_test_results.JPG" width="700">
+
+Train MSE: 0.679869433878938
+
+Test MSE: 0.5716842852078798
 
 
 - Future predictions
