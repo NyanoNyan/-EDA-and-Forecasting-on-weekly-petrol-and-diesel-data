@@ -13,6 +13,8 @@
 
 **Details about the data:**
 
+- This data is from June 2003 till May 2020. When the data was extracted, the latest data was from May 2020.
+
 - The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
 
 - Univariate forecasting method was used
@@ -59,4 +61,10 @@ A univariate approach was used for this, as when additional features such as pet
 
 ### Forecasting with trend removal
 
+- For this section, I looked took the petrol pump price data over time and used bi-directional LSTM model to fit and predict future values of weekly petrol data in the UK.
 
+- I also applied detrending before fitting the model as in papers it was a recommended step for pre-processing. Also, due to detrending, this will make the data staionary which will allow the model to train well.
+
+- A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model, can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
+
+- The cross-validtion for this data set was changed a little bit. 90% (841 values) of the data was used for training and 8% (71 values) was used for testing. Lastly, 2% of the data (11 values) were used to test unknown future values.
