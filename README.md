@@ -10,3 +10,10 @@ Jupyternotebook links:
 
 <a href="https://gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22"><img src="https://i.gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22.gif" alt="Image from Gyazo" width="700"/></a>
 
+
+### Forecasting without trend removal
+
+- Training and testing loss
+- Information
+
+<img src="images/train and test loss.JPG" width="500">
