@@ -10,20 +10,30 @@
 
 <a href="https://gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22"><img src="https://i.gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22.gif" alt="Image from Gyazo" width="700"/></a>
 
+
 **Details about the data: **
 
-- The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
+The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
 
-- Univariate forecasting method was used
+Univariate forecasting method was used
 
-- A 7 day windowed data size was chosen due to the data being weekly. Also, a weekly data would seem appropriate to choose to forecast future weeks. 
+A 7 day windowed data size was chosen due to the data being weekly. Also, a weekly data would seem appropriate to choose to forecast future weeks.
 
-- A bidrectional LSTM was used form this model. L2 and dropout regularization were used to reduce overfitting.
-
+A bidrectional LSTM was used form this model. L2 and dropout regularization were used to reduce overfitting.
 
 ### Forecasting without trend removal
 
-- Training and testing loss
+- For this section, I looked took the petrol pump price data over time and used bi-directional LSTM model to fit and predict future values of weekly petrol data in the UK.
+
+- In this section, I did not implement de-trending to view how the results would fair compared to de-treding the data.
+A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model, can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
+
+- Furthermore, 90% (841 values) of the data was used for training and 5% (37 values) was used for testing.
+
+- In the end, predicted 7 weeks of data for the petrol prices into the future with the model.
+
+**Training and testing loss:**
+
 - Results on the training and validation are good as validation loss is lower compared to the training loss. This helps as the model will be able to predict future values better.
 
 <img src="images/train and test loss.JPG" width="700">
@@ -45,5 +55,8 @@
 7 weeks into the future shows there is going to be a downwards trend in the petrol price in the following weeks.
 
 <img src="images/future_predictions.JPG" width="700">
+
+
+### Forecasting with trend removal
 
 
