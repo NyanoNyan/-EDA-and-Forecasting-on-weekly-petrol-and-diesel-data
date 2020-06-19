@@ -8,4 +8,4 @@
 
 
 
-<img src="images/Petrol and Diesel pump price graph.JPG" width="750">
+<img src="https://gyazo.com/b850ff14f999d8787fe30207b65ff601" width="750">
