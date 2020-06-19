@@ -68,3 +68,25 @@ A univariate approach was used for this, as when additional features such as pet
 - A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model, can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
 
 - The cross-validtion for this data set was changed a little bit. 90% (841 values) of the data was used for training and 8% (71 values) was used for testing. Lastly, 2% of the data (11 values) were used to test unknown future values.
+
+<img src="images/de-trended_data.JPG" width="700">
+
+**Training and testing loss:**
+
+<img src="images/de-trend_train_loss.JPG" width="700">
+
+- Results on training set shows that the predicted values are similar to the actual values.
+
+<img src="images/de-trend_training_results.JPG" width="700">
+
+
+
+- Information
+
+<img src="images/de-trend_test_results.JPG" width="700">
+
+
+- Future predictions
+
+<img src="images/de-trend_future_predictions.JPG" width="700">
+
