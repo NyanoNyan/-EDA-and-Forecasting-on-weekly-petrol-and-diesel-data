@@ -7,4 +7,4 @@
 - <a href="https://nbviewer.jupyter.org/github/NyanoNyan/Portfolio/blob/22201b5ecb361169cb0288bfdd76b4190e810b4e/1)%20EDA%20and%20Forecasting/Clean_LSTM_Forecasting_weekly_road_fuel.ipynb">LSTM forecasting **with Trend removal**</a>
 
 
-<a href="https://gyazo.com/b850ff14f999d8787fe30207b65ff601"><img src="https://i.gyazo.com/b850ff14f999d8787fe30207b65ff601.gif" alt="Image from Gyazo" width="750"/></a>
+<a href="https://gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22"><img src="https://i.gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22.gif" alt="Image from Gyazo" width="700"/></a>
