@@ -40,6 +40,9 @@ A univariate approach was used for this, as when additional features such as pet
 
 <img src="images/train and test loss.JPG" width="700">
 
+Train MSE: 5.102
+
+Test MSE: 10.504
 
 - Results on training set shows that the predicted values are similar to the actual values.
 
