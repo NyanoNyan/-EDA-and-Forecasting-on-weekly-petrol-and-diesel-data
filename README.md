@@ -17,3 +17,18 @@ Jupyternotebook links:
 - Information
 
 <img src="images/train and test loss.JPG" width="700">
+
+
+- Results on training set 
+
+<img src="images/training_data_results.JPG" width="700">
+
+
+- Results on Test set 
+
+<img src="images/training_data_test_results.JPG" width="700">
+
+
+- Predicting the future, 7 weeks into the future
+
+<img src="images/future_predictions.JPG" width="700">
