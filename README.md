@@ -13,13 +13,13 @@
 
 **Details about the data: **
 
-The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
+- The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
 
-Univariate forecasting method was used
+- Univariate forecasting method was used
 
-A 7 day windowed data size was chosen due to the data being weekly. Also, a weekly data would seem appropriate to choose to forecast future weeks.
+- A 7 day windowed data size was chosen due to the data being weekly. Also, a weekly data would seem appropriate to choose to forecast future weeks.
 
-A bidrectional LSTM was used form this model. L2 and dropout regularization were used to reduce overfitting.
+- A bidrectional LSTM was used form this model. L2 and dropout regularization were used to reduce overfitting.
 
 ### Forecasting without trend removal
 
