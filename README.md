@@ -74,26 +74,26 @@ Test MSE: 10.504
 
 <img src="images/de-trended_data.JPG" width="700">
 
+- obs(t) - obs(t-1) to detrend the data
+
 **Training and testing loss:**
 
 <img src="images/de-trend_train_loss.JPG" width="700">
 
-- Results on training set shows that the predicted values are similar to the actual values.
-
+**Predicted and Actual values on the Training set**
 <img src="images/de-trend_training_results.JPG" width="700">
 
 
-
-- Information
-
+**Predicted and Actual values on the Test set**
 <img src="images/de-trend_test_results.JPG" width="700">
 
-Train MSE: 0.679869433878938
+Train MSE: 0.679
 
-Test MSE: 0.5716842852078798
+Test MSE: 0.571
+
+- From the training and testing loss graph and with the MSE, it shows the model is doing well in the test data set. There is no overfitting compared to the model without conducting the detrending. With the trend values added back to the data, it significantly improved MSE and its prediction on the test set.
 
 
 - Future predictions
 
 <img src="images/de-trend_future_predictions.JPG" width="700">
-
