@@ -9,7 +9,7 @@
 - <a href="https://nbviewer.jupyter.org/github/NyanoNyan/Portfolio/blob/22201b5ecb361169cb0288bfdd76b4190e810b4e/1)%20EDA%20and%20Forecasting/Clean_LSTM_Forecasting_weekly_road_fuel.ipynb">LSTM forecasting **with Trend removal**</a>
 
 
-<a href="https://gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22"><img src="https://i.gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22.gif" alt="Image from Gyazo" width="800"/></a>
+<a href="https://gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22"><img src="https://i.gyazo.com/d2ff2a0d27b62e94887ea3a6a6dc7e22.gif" alt="Image from Gyazo" width="900"/></a>
 
 
 **Details about the data:**
@@ -33,18 +33,18 @@
 
 - Results on the training and validation are good as validation loss is lower compared to the training loss. This helps as the model will be able to predict future values better.
 
-<img src="images/train and test loss.JPG" width="700">
+<img src="images/train and test loss.JPG" width="900">
 
 
 - Results on the training set indicate that the predicted values are similar to the actual values.
 
 
-<img src="images/training_data_results.JPG" width="800">
+<img src="images/training_data_results.JPG" width="900">
 
 
 - Although, not perfect. The results from the predicted values from the test/validation data show that it can predict a similar trend compared to the actual data of the petrol price.
 
-<img src="images/training_data_test_results.JPG" width="800">
+<img src="images/training_data_test_results.JPG" width="900">
 
 Train MSE: 5.102
 
@@ -54,7 +54,7 @@ Test MSE: 10.504
 
 7 weeks into the future shows there is going to be a downwards trend in the petrol price in the following weeks.
 
-<img src="images/future_predictions.JPG" width="800">
+<img src="images/future_predictions.JPG" width="900">
 
 
 ### Forecasting with trend removal
@@ -67,20 +67,20 @@ Test MSE: 10.504
 
 - The cross-validation for this data set was changed a little bit. 90% (841 values) of the data was used for training and 8% (71 values) was used for testing. Lastly, 2% of the data (11 values) were used to test unknown future values.
 
-<img src="images/de-trended_data.JPG" width="800">
+<img src="images/de-trended_data.JPG" width="900">
 
 - obs(t) - obs(t-1) to detrend the data
 
 **Training and testing loss:**
 
-<img src="images/de-trend_train_loss.JPG" width="800">
+<img src="images/de-trend_train_loss.JPG" width="900">
 
 **Predicted and Actual values on the Training set:**
-<img src="images/de-trend_training_results.JPG" width="800">
+<img src="images/de-trend_training_results.JPG" width="900">
 
 
 **Predicted and Actual values on the Test set:**
-<img src="images/de-trend_test_results.JPG" width="800">
+<img src="images/de-trend_test_results.JPG" width="900">
 
 **Train MSE: 0.679**
 
@@ -91,4 +91,4 @@ Test MSE: 10.504
 
 **Future predictions:**
 
-<img src="images/de-trend_future_predictions.JPG" width="800">
+<img src="images/de-trend_future_predictions.JPG" width="900">
