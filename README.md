@@ -15,21 +15,15 @@
 **Details about the data:**
 
 - This data is from June 2003 till May 2020. When the data was extracted, the latest data was from May 2020.
-
 - The data was for a weekly road fuel prices on the cost for the unleaded petrol (ULSP) and unleaded diesel (ULSD).
-
 - Univariate forecasting method was used
-
-- A 7 day windowed data size was chosen due to the data being weekly. Also, a weekly data would seem appropriate to choose to forecast future weeks.
-
-- A bidrectional LSTM was used form this model. L2 and dropout regularization were used to reduce overfitting.
-
+- 7-day windowed data size was chosen due to the data being weekly. Also, weekly data would seem appropriate to choose to forecast future weeks.
+- A bidirectional LSTM was used for this model. L2 and dropout regularization were used to reduce overfitting.
 ### Forecasting without trend removal
 
 - For this section, I looked took the petrol pump price data over time and used bi-directional LSTM model to fit and predict future values of weekly petrol data in the UK.
 
-- In this section, I did not implement de-trending to view how the results would fair compared to de-treding the data.
-A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model, can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
+- In this section, I did not implement de-trending to view how the results would fare compared to detrending the data. A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
 
 - Furthermore, 90% (841 values) of the data was used for training and 5% (37 values) was used for testing.
 
@@ -42,13 +36,13 @@ A univariate approach was used for this, as when additional features such as pet
 <img src="images/train and test loss.JPG" width="700">
 
 
-- Results on training set shows that the predicted values are similar to the actual values.
+- Results on the training set indicate that the predicted values are similar to the actual values.
 
 
 <img src="images/training_data_results.JPG" width="700">
 
 
-- Although, not perfect. The results from the predicted values from the test/validation data shows that it is able to predict similar trend compared to the actual test.
+- Although, not perfect. The results from the predicted values from the test/validation data show that it can predict a similar trend compared to the actual data of the petrol price.
 
 <img src="images/training_data_test_results.JPG" width="700">
 
@@ -67,11 +61,11 @@ Test MSE: 10.504
 
 - For this section, I looked took the petrol pump price data over time and used bi-directional LSTM model to fit and predict future values of weekly petrol data in the UK.
 
-- I also applied detrending before fitting the model as in papers it was a recommended step for pre-processing. Also, due to detrending, this will make the data staionary which will allow the model to train well.
+- I also applied detrending before fitting the model as in papers it was a recommended step for pre-processing. Also, due to detrending, this will make the data stationary which will allow the model to train well..
 
-- A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model, can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
+- A univariate approach was used for this, as when additional features such as petrol_duty_rate, petrol_vat_percent_rate, and Year were added, it did not improve the model. However, this model can be adapted to a multivariate time series, by feeding it x columns data and changing the num_x to numbers of features.
 
-- The cross-validtion for this data set was changed a little bit. 90% (841 values) of the data was used for training and 8% (71 values) was used for testing. Lastly, 2% of the data (11 values) were used to test unknown future values.
+- The cross-validation for this data set was changed a little bit. 90% (841 values) of the data was used for training and 8% (71 values) was used for testing. Lastly, 2% of the data (11 values) were used to test unknown future values.
 
 <img src="images/de-trended_data.JPG" width="700">
 
